@@ -41,5 +41,6 @@ A full-screen terminal toolkit built in Bash with:
 ```bash
 git clone https://github.com/bensonngugi1/simple_bash_script.git
 cd simple_bash_script
+cd bash_script
 chmod +x simple_linux_toolkit.sh
 ./simple_linux_toolkit.sh
