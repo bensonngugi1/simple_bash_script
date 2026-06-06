@@ -85,8 +85,8 @@ file_organizer() {
     local dir="${1:-.}"
     local hash_db="$dir/.hashdb"
 
-    echo -e "${BLUE}Running File Organizer...${RESET}"
-    log_action "File organizer started"
+    echo -e "${BLUE}Running File Organizer Now...${RESET}"
+    log_action "File organizer has started"
 
     for file in "$dir"/*; do
         [[ -f "$file" ]] || continue
@@ -207,7 +207,7 @@ while true; do
                 2) system_dashboard ;;
                 3) plugins_menu ;;
                 4) tail -n 20 "$LOG_FILE"; read -rp "Press Enter..." ;;
-		5) echo -e "${RED}Exiting...Bye bye welcome back again ;)${RESET}"; exit 0 ;;
+		5) echo -e "${RED}Exiting...Bye welcome back again ;)${RESET}"; exit 0 ;;
             esac
             ;;
     esac
