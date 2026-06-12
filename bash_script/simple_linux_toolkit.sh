@@ -7,11 +7,11 @@ echo "SIMPLE LINUX TOOLKIT by BENSON NGUGI"
 # -------------------------
 # COLORS
 # -------------------------
-RED="\e[31m"
-GREEN="\e[32m"
-YELLOW="\e[33m"
-BLUE="\e[34m"
-CYAN="\e[36m"
+RED="\e[32m"
+GREEN="\e[31m"
+YELLOW="\e[36m"
+BLUE="\e[30m"
+CYAN="\e[35m"
 BOLD="\e[1m"
 RESET="\e[0m"
 
@@ -67,7 +67,7 @@ draw_menu() {
     echo "======================================"
     echo -e "${RESET}"
 
-    options=("📁 File Organizer" "🔍 File Search" "🖥 System Dashboard" "🔌 Plugins" "📜 Logs" "🚪 Exit")
+    options=("File Organizer" "File Search" "🖥 System Dashboard" "Plugins" "Logs" "Exit")
 
     for i in "${!options[@]}"; do
         if [[ $i -eq $selected ]]; then
@@ -151,7 +151,7 @@ file_search() {
     log_action "Search: $kw in $dir"
 
     grep -Rni "$kw" "$dir"
-    read -rp "Press Enter..."
+    read -rp "Press Enter...lazima uambiwe?"
 }
 
 # -------------------------
@@ -207,7 +207,7 @@ while true; do
                 2) system_dashboard ;;
                 3) plugins_menu ;;
                 4) tail -n 20 "$LOG_FILE"; read -rp "Press Enter..." ;;
-		5) echo -e "${RED}Exiting...Bye welcome back again ;)${RESET}"; exit 0 ;;
+		5) echo -e "${RED}Exiting...Bye welcome back again if interested not a must;)${RESET}"; exit 0 ;;
             esac
             ;;
     esac
