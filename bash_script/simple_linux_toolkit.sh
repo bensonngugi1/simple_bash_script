@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
-
+#This is my first script so do not mind if it is dirty or dat😅
 # =====================================================
 echo "SIMPLE LINUX TOOLKIT by BENSON NGUGI"
 # =====================================================
-
+#If a commands fail exist
+set -e
 # -------------------------
 # COLORS
 # -------------------------
@@ -14,7 +15,7 @@ BLUE="\e[30m"
 CYAN="\e[35m"
 BOLD="\e[1m"
 RESET="\e[0m"
-
+# This colors are used to display the terminal of the color then at last we use reset to make it not to be consistent
 # -------------------------
 # CONFIG
 # -------------------------
